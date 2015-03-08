@@ -62,8 +62,8 @@
 								'</video>'});
 					
 					var myMap = new google.maps.Map(document.getElementById('map'), {
-						    zoom: 10,
-						    center: new google.maps.LatLng(35.4732456, 139.420753),
+						    zoom: 12,
+						    center: new google.maps.LatLng(35.5432456, 139.490753),
 						    scrollwheel: true,
 						    mapTypeId: google.maps.MapTypeId.ROADMAP
 				  });
@@ -82,19 +82,17 @@
 
     </head>
     <body onload="start()">
-      <div id="map" style="width:70%; height:100%; float:left;"></div>
-			<div id="movie" style="width:30%; height:auto; float:right;">
+      <div id="map" style="width:60%; height:100%; float:left;"></div>
+			<div id="movie" style="width:40%; height:auto; float:right;">
 			  ▼しりとりまとめ
-				<video controls preload="auto" style="width:100%; height:auto;">
+				<video controls preload="auto" autoplay style="width:100%; height:auto;">
 				  <source src="./join_movie.mp4" type="video/mp4">
 				</video>
 				▼お勧めの動画
 				<video controls preload="auto" style="width:100%; height:auto;">
-				  <source src="./movie/kaeru.mp4" type="video/mp4">
+				  <source src="./movie/kaeru.mp4" type="video/mp4" >
 				</video>
-				<video controls preload="auto" style="width:100%; height:auto;">
-				  <source src="./movie/rihabiri.mp4" type="video/mp4">
-				</video>
+
 			</div>
    </body>
 </html>
